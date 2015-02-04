@@ -1,0 +1,25 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+SetEnvIf content-type (multipart/form-data)(.*) NEW_CONTENT_TYPE=multipart/form-data-alternate$2 OLD_CONTENT_TYPE=$1$2
+RequestHeader set content-type %{NEW_CONTENT_TYPE}e env=NEW_CONTENT_TYPE
+
+php_value memory_limit 25M
+
+NovellAuth on 
+AuthName "Novell Tree"  
+AuthType login.clemson.edu
+
+<Files "htaccess.txt">
+	order allow,deny
+	deny from all
+</Files>
+
+<Files "ini.php">
+	order allow,deny
+	deny from all
+</Files>
+
+<Files "admin_*">
+	require user mdowlin
+</Files>

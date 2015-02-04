@@ -1,0 +1,18 @@
+NovellAuth on 
+AuthName "Novell Tree"  
+AuthType login.clemson.edu
+
+<Files "*">
+	require user mdowlin
+	require user adevrie
+	require user lwaddel
+	require user gdranic
+	require user rebholz
+</Files>
+
+<Files "htaccess.txt">
+	order allow,deny
+	deny from all
+</Files>
+
+

@@ -1,0 +1,34 @@
+<Files "vote_officer.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require group .students.clemsonu
+	require user nblack
+</Files>
+
+<Files "vote_officer_approval.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require group .students.clemsonu
+</Files>
+
+<Files "download_data.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require user siam
+	require user nblack
+</Files>
+
+<Files "voting_totals.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require user siam
+	require user nblack
+</Files>

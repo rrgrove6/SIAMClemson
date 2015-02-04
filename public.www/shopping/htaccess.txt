@@ -1,0 +1,19 @@
+php_flag display_errors On
+php_flag display_startup_errors On
+
+NovellAuth on 
+AuthName "Novell Tree"  
+AuthType login.clemson.edu
+
+<Files "htaccess.txt">
+	order allow,deny
+	deny from all
+</Files>
+
+<Files "shop.php">
+	require valid-user
+</Files>
+
+<Files "order.php">
+	require valid-user
+</Files>

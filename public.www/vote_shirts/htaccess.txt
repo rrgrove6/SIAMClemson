@@ -1,0 +1,7 @@
+<Files "vote_shirt.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require valid-user
+</Files>

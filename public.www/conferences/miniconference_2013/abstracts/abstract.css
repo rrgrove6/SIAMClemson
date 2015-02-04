@@ -1,0 +1,31 @@
+.return_link
+{
+	margin-bottom: 40px;
+}
+
+.outline
+{
+	background: #FFFFFF;
+	border: solid 4px #000000;
+	padding: 50px;
+}
+
+.talk_title
+{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.speaker
+{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.abstract_content
+{
+	margin-top: 40px;
+	text-align: justify;
+}

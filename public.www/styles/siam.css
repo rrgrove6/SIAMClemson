@@ -1,0 +1,88 @@
+#menu
+{
+   float:left;
+   width:100%;
+   overflow:hidden;
+   position:relative;
+   margin-bottom: 5px;
+}
+
+#menu ul
+{
+	clear:left;
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	left:50%;
+	text-align:center;
+	font-family: Arial;
+}
+
+#menu ul li
+{
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+
+#menu ul li a:hover
+{
+	background: url('../img/siam_btns.png') 0px -33px;
+}
+
+#menu ul li a
+{
+	display: block;
+	text-align: center;
+	line-height: 33px;
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 128px;
+	height: 33px;
+	background: url('../img/siam_btns.png') 0px 0px;
+}
+
+button.siam_btn
+{
+	width: 128px;
+	height: 33px;
+	background: url('../img/siam_btns.png') 0px 0px;
+	border: 0px;
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+button.siam_btn:hover
+{
+	background: url('../img/siam_btns.png') 0px -33px;
+}
+
+ul
+{
+   list-style-image: url(../img/bullet.png);
+   list-style-type: circle;
+}
+
+a:link
+{
+	/*color: #330066;*/
+	color: #9900FF;
+}
+
+a:visited
+{
+	color: #FF6633;
+}
+
+a:active
+{
+	color: #9900FF;
+}

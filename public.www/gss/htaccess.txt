@@ -1,0 +1,29 @@
+php_flag display_errors On
+php_flag display_startup_errors On
+
+NovellAuth on 
+AuthName "Novell Tree"  
+AuthType login.clemson.edu
+
+<Files "htaccess.txt">
+	order allow,deny
+	deny from all
+</Files>
+
+#Right now, I am commenting this out since it looks like the new students may not have access.
+
+<Files "signup.php">
+    #require group .students.clemsonu
+    
+
+    require group .affiliation_student.workgroups.sitesets.clemsonu
+
+
+    # we allow Christa Johnson to join in
+    require user cj6
+    require user stellaw
+</Files>
+
+<Files "admin_*">
+	require user mdowlin
+</Files>

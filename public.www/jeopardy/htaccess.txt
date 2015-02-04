@@ -1,0 +1,38 @@
+NovellAuth on 
+AuthName "Novell Tree"  
+AuthType login.clemson.edu
+
+<Files "responses.php">
+	require valid-user
+</Files>
+
+<Files "final_jeopardy.php">
+	require valid-user
+</Files>
+
+<Files "settings.php">
+	require user NBLACK
+    require user MDOWLIN
+</Files>
+
+<Files "team_setup.php">
+	require user NBLACK
+    require user MDOWLIN
+</Files>
+
+<Files "admin.php">
+	require user NBLACK
+    require user MDOWLIN
+</Files>
+
+<Files "categories.php">
+	require user NBLACK
+</Files>
+
+<Files "questions.php">
+	require user NBLACK
+</Files>
+
+<Files "review_answers.php">
+	require user NBLACK
+</Files>

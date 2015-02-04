@@ -1,0 +1,22 @@
+body
+{
+	text-align: center;
+	font-family: Arial;
+	background: #563397;
+}
+
+.slide_layout
+{
+	text-align: left;
+	width: 965px;
+	height: 711px;
+	padding-right: 15px;
+	margin: 0px auto;
+	position: relative;
+	color: #FFFFFF;
+}
+
+.admin_navigation a
+{
+	color: #FFFFFF;
+}

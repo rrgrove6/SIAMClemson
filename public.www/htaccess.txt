@@ -1,0 +1,96 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+# url rewriting
+RewriteRule ^picnic.php /~siam/picnic/picnic.php [R=301,NC]
+RewriteRule ^vote_shirt.php /~siam/vote_shirts/vote_shirt.php [R=301,NC]
+RewriteRule ^vote_officer.php /~siam/vote_officers/vote_officer.php [R=301,NC]
+RewriteRule ^order.php /~siam/shopping/order.php [R=301,NC]
+RewriteRule ^shop.php /~siam/shopping/shop.php [R=301,NC]
+
+<Files "order.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require valid-user
+</Files>
+
+<Files "cancel_order.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require valid-user
+</Files>
+
+<Files "ice_cream.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require valid-user
+</Files>
+
+<Files "ice_cream_stats.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require user tto
+	require user lwaddel
+	require user adevrie
+	require user gdranic
+	require user rebholz
+    require user rgrove
+</Files>
+
+<Files "christmas_party.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require valid-user
+</Files>
+
+<Files "christmas_party_stats.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require user rgrove
+	require user lwaddel
+	require user adevrie
+	require user gdranic
+	require user rebholz
+    require user tto
+</Files>
+
+<Files "funcs.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+    require user adevrie
+    require user rgrove
+</Files>
+
+<Files "admin.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+	 
+	require user rgrove
+    require user tto
+	require user lwaddel
+	require user adevrie
+	require user gdranic
+	require user rebholz
+</Files>
+
+<Files "htaccess.txt">
+	order allow,deny
+	deny from all
+</Files>
+
+

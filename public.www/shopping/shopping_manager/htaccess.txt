@@ -1,0 +1,15 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+<Files "htaccess.txt">
+	order allow,deny
+	deny from all
+</Files>
+
+<Files "*">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+    
+	require user mdowlin
+</Files>

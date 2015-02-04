@@ -1,0 +1,7 @@
+NovellAuth on 
+AuthName "Novell Tree"  
+AuthType login.clemson.edu
+
+<Files "picnic.php">
+	require valid-user
+</Files>

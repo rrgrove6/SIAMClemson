@@ -1,0 +1,14 @@
+<Files "*.php">
+    NovellAuth on 
+    AuthName "Novell Tree"  
+    AuthType login.clemson.edu
+
+	require valid-user
+</Files>
+
+<Files "htaccess.txt">
+	order allow,deny
+	deny from all
+</Files>
+
+
