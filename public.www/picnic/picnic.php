@@ -135,11 +135,11 @@ else // they have not signed up yet
         
         // send the user an email confirming their signup
         $message = <<<EOH
-You have successfully signed up for the $current_semester picnic. If you have any questions or need to change any of the information you submitted when signing up, please contact Dr. Rebholz (O-118) or one of the SIAM officers.
+You have successfully signed up for the Spring picnic. If you have any questions or need to change any of the information you submitted when signing up, please contact one of the SIAM officers or Dr. Rebholz.
 
 Mark your calendar for the picnic.
-Where: Clemson Outdoor Labs
-When: Friday, September 19 from 5:00 PM - 7:00 PM
+Where: Clemson Outdoor Lab
+When: Friday, April 17 from 5:00 PM - 7:30 PM
 
 Directions are available at the following websites.
 
