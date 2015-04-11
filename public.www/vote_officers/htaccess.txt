@@ -4,7 +4,8 @@
     AuthType login.clemson.edu
 
 	require group .students.clemsonu
-	require user nblack
+	require user rgrove
+    require user adevrie
 </Files>
 
 <Files "vote_officer_approval.php">
@@ -21,7 +22,8 @@
     AuthType login.clemson.edu
 
 	require user siam
-	require user nblack
+	require user rgrove
+    require user adevrie
 </Files>
 
 <Files "voting_totals.php">
@@ -30,5 +32,6 @@
     AuthType login.clemson.edu
 
 	require user siam
-	require user nblack
+	require user adevrie
+    require user rgrove
 </Files>

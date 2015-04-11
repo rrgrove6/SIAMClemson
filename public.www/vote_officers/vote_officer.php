@@ -76,16 +76,19 @@ function confirm_vote()
     var vp_prefs = get_pref_order("Vice_President");
     var treas_prefs = get_pref_order("Treasurer");
     var sec_prefs = get_pref_order("Secretary");
+    var web_prefs = get_pref_order("Webmaster");
     
     $("#pres_prefs").val(pack_up(pres_prefs));
     $("#vp_prefs").val(pack_up(vp_prefs));
     $("#treas_prefs").val(pack_up(treas_prefs));
     $("#sec_prefs").val(pack_up(sec_prefs));
+    $("#web_prefs").val(pack_up(sec_prefs));
     
     var voting_summary = create_summary("President", pres_prefs);
     voting_summary += create_summary("\nVice President", vp_prefs);
     voting_summary += create_summary("\nTreasurer", treas_prefs);
     voting_summary += create_summary("\nSecretary", sec_prefs);
+    voting_summary += create_summary("\nWebmaster", web_prefs);
 
     var response = confirm("Are you sure you want to vote for the following people?\n\n" + voting_summary);
     
@@ -109,6 +112,9 @@ $(function() {
     
     $( "#sortable_Secretary" ).sortable();
     $( "#sortable_Secretary" ).disableSelection();
+
+    $( "#sortable_Webmaster" ).sortable();
+    $( "#sortable_Webmaster" ).disableSelection();
 });
 </script>
 <style type="text/css">
@@ -190,7 +196,7 @@ if(is_voter_eligible($username))
 
         add_new_vote($username, $pres_prefs, $vp_prefs, $treas_prefs, $sec_prefs);
 ?>
-<p>Thank you for voting in the SIAM officer election. The results will be announced via email on Monday, September 29, 2014.</p>
+<p>Thank you for voting in the SIAM officer election. The results will be announced at the Spring Picnic on Friday, April 17, 2015.</p>
 <?php
 	}
 	else
@@ -243,6 +249,7 @@ EOF;
     <input type="hidden" name="vp_prefs" id="vp_prefs" value="">
     <input type="hidden" name="treas_prefs" id="treas_prefs" value="">
     <input type="hidden" name="sec_prefs" id="sec_prefs" value="">
+    <input type="hidden" name="web_prefs" id="web_prefs" value="">
 </div>
 </form>
 <?php

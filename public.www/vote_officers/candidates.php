@@ -110,14 +110,15 @@ include "../common/template.php";
 <div style="width: 800px; margin-left: auto; margin-right: auto; position: relative; text-align: left;">
 
 
-<p>SIAM is pleased to announce the candidates for the four SIAM offices for next year. A green check mark in the table below indicates that the candidate in that row is running for the office in that column. Details on the election will be made available when voting begins on Friday.</p>
+<p>SIAM is pleased to announce the candidates for the five SIAM offices for next year. A green check mark in the table below indicates that the candidate in that row is running for the office in that column. </p>
 <table align="center" cellspacing="0" style="margin-top: 15px; margin-bottom: 15px;">
     <tr class="candidate_header">
         <td class="candidate_name"></td>
         <td class="candidate_cell">President</td>
         <td class="candidate_cell">Vice President</td>
         <td class="candidate_cell">Treasurer</td>
-        <!--<td class="candidate_cell">Secretary</td>-->
+        <td class="candidate_cell">Secretary</td>
+        <td class="candidate_cell">Webmaster</td>
     </tr>
     <tr>
         <td class="candidate_name">Audrey DeVries</td>
@@ -127,11 +128,12 @@ include "../common/template.php";
         <td class="candidate_cell"></td>
     </tr>
     <tr>
-        <td class="candidate_name">Lucas Waddell</td>
+        <td class="candidate_name">Garrett Dranichak</td>
         <td class="candidate_cell"></td>
         <td class="candidate_cell"><img src="/~siam/img/check.png"></td>
         <td class="candidate_cell"></td>
         <td class="candidate_cell"></td>
+ 	<td class="candidate_cell"></td>
     </tr>
     <tr>
         <td class="candidate_name">Thanh To</td>
@@ -139,13 +141,23 @@ include "../common/template.php";
         <td class="candidate_cell"></td>
         <td class="candidate_cell"><img src="/~siam/img/check.png"></td>
         <td class="candidate_cell"></td>
+ 	<td class="candidate_cell"></td>
     </tr>
     <tr>
-        <td class="candidate_name">Ashleigh Craig</td>
+        <td class="candidate_name">Elaine Sotherden</td>
         <td class="candidate_cell"></td>
         <td class="candidate_cell"></td>
+ 	<td class="candidate_cell"></td>
         <td class="candidate_cell"><img src="/~siam/img/check.png"></td>
         <td class="candidate_cell"></td>
+    </tr>
+    <tr>
+        <td class="candidate_name">Ryan Grove</td>
+        <td class="candidate_cell"></td>
+        <td class="candidate_cell"></td>
+ 	<td class="candidate_cell"></td>
+ 	<td class="candidate_cell"></td>
+        <td class="candidate_cell"><img src="/~siam/img/check.png"></td>
     </tr>
     </table>
 
@@ -157,13 +169,16 @@ include "../common/template.php";
             <img id="image_1" src="audrey_devries.jpg" title="Audrey DeVries" onClick="javascript:preview(1);">
         </div>
         <div id="tab_2" class="tab">
-            <img id="image_2" src="lucas_waddell.jpg" title="Lucas Waddell" onClick="javascript:preview(2);">
+            <img id="image_2" src="garret_dranichak.jpg" title="Garrett Dranichak" onClick="javascript:preview(2);">
         </div>
 	<div id="tab_3" class="tab">
             <img id="image_3" src="thanh_to.jpg" title="Thanh To" onClick="javascript:preview(3);">
         </div>
 	<div id="tab_4" class="tab">
-            <img id="image_4" src="ashleigh_craig.jpg" title="Ashleigh Craig" onClick="javascript:preview(4);">
+            <img id="image_4" src="elaine_sotherden.jpg" title="Elaine Sotherden" onClick="javascript:preview(4);">
+        </div>
+        <div id="tab_5" class="tab">
+            <img id="image_5" src="ryan_grove.jpg" title="Ryan Grove" onClick="javascript:preview(5);">
         </div>
     </div>
     <div id="info_1" class="info" style="display: none;">
@@ -196,49 +211,49 @@ include "../common/template.php";
             </li>
             <li>
                 <div class="question">What things are you involved with at Clemson (or were involved in during undergrad)?</div>
-                <div class="response">Here at Clemson I served as Secretary of SIAM last year and Treasurer of SIAM since April 2014. I am often involved with a lot of one-on-one tutoring. Currently I also volunteer and help with the English Improvement Sessions for international students.</div>
+                <div class="response">Here at Clemson I served as President of SIAM this past year and Treasurer and Secretary in the past. I am also involved with a lot of one-on-one tutoring.</div>
             </li>
             <li>
                 <div class="question">What do you plan to do after you get your degree?</div>
-                <div class="response">At this point I am hoping to become a college math professor, but I really just want to be a stay-at-home mom.</div>
+                <div class="response">I love teaching and am hoping to be a college math professor after getting my PhD.</div>
             </li>
         </ul>
     </div>
     <div id="info_2" class="info" style="display: none;">
-        <div class="name">Lucas Waddell</div>
+        <div class="name">Garrett Dranichak</div>
         <hr>
         <ul class="questionnaire">
             <li>
                 <div class="question">Where did you attend undergrad?</div>
-                <div class="response">Grove City College (Grove City, PA)</div>
+                <div class="response">Pfeiffer University</div>
             </li>
             <li>
                 <div class="question">What is your concentration area at Clemson?</div>
-                <div class="response">Operations Research</div>
+                <div class="response">Operations Research (multicriteria robust optimization)</div>
             </li>
             <li>
                 <div class="question">Who is your advisor(s)?</div>
-                <div class="response">Dr. Warren Adams</div>
+                <div class="response">Dr. Margaret Wiecek</div>
             </li>
             <li>
                 <div class="question">Are you currently working on a MS or a PhD?</div>
-                <div class="response">PhD (5th year)</div>
+                <div class="response">PhD</div>
             </li>
             <li>
                 <div class="question">What area of the US/world do you consider to be home?</div>
-                <div class="response">Central Pennsylvania</div>
+                <div class="response">I am originally from Dublin, OH</div>
             </li>
             <li>
                 <div class="question">Why you are running?</div>
-                <div class="response">During my time at Clemson I have really enjoyed attending the events that SIAM organizes.  I thought that it would be fun to give back to the organization during my last year here.</div>
+                <div class="response">I am running for the office of Vice President in order to continue to serve the math graduate students by providing social events, opportunities to present research, and engage in professional development.</div>
             </li>
             <li>
                 <div class="question">What things are you involved with at Clemson (or were involved in during undergrad)?</div>
-                <div class="response">I’m involved with a lot of the events put on by various groups within our department (Clemson Calculus Challenge, various AWM outreach activities, etc.).  I've been serving as interim VP of SIAM for the past month.</div>
+                <div class="response">I am currently involved with Clemson's SIAM Student Chapter as acting Secretary. In addition, I am a member of the student chapter of AWM, I volunteer at the Clemson Calculus Challenge, and I help out with the Math-In every semester before finals. </div>
             </li>
             <li>
                 <div class="question">What do you plan to do after you get your degree?</div>
-                <div class="response">Get a job, hopefully!  I'm considering teaching at a small liberal arts college or working in industry.</div>
+                <div class="response"> After my degree, I plan to work as a professor at a smaller liberal arts college, similar to the university I attended for undergrad. I appreciate the opportunity to teach as a graduate student here at Clemson, and I thoroughly enjoy working with the students.</div>
                 </li>
         </ul>
     </div>
@@ -272,7 +287,7 @@ include "../common/template.php";
             </li>
             <li>
                 <div class="question">What things are you involved with at Clemson (or were involved in during undergrad)?</div>
-                <div class="response">I used to do some martial art with Cuong Nhu.</div>
+                <div class="response">I'm the current treasurer for SIAM. I used to do some martial art with Cuong Nhu.</div>
             </li>
             <li>
                 <div class="question">What do you plan to do after you get your degree?</div>
@@ -281,16 +296,16 @@ include "../common/template.php";
         </ul>
     </div>
     <div id="info_4" class="info" style="display: none;">
-        <div class="name">Ashleigh Craig</div>
+        <div class="name">Elaine Sotherden</div>
         <hr>
         <ul class="questionnaire">
             <li>
                 <div class="question">Where did you attend undergrad?</div>
-                <div class="response">Indiana University of Pennsylvania (IUP)</div>
+                <div class="response">Grove city college.</div>
             </li>
             <li>
                 <div class="question">What is your concentration area at Clemson?</div>
-                <div class="response">Operations Research</div>
+                <div class="response">Statistics</div>
             </li>
             <li>
                 <div class="question">Who is your advisor(s)?</div>
@@ -298,24 +313,61 @@ include "../common/template.php";
             </li>
             <li>
                 <div class="question">Are you currently working on a MS or a PhD?</div>
-                <div class="response">MS possibly en route to a PhD.</div>
+                <div class="response">PhD</div>
             </li>
             <li>
                 <div class="question">What area of the US/world do you consider to be home?</div>
-                <div class="response">Central Pennsylvania</div>
+                <div class="response">Pennsylvania</div>
             </li>
             <li>
                 <div class="question">Why you are running?</div>
-                <div class="response">I am running for Treasurer of SIAM because as a first year grad student here at Clemson I want to become more involved in SIAM and the math department. I also think that serving as Treasurer would be a great way for me to get to know other students in the department. I am a very organized person and believe I would be a great fit for the role of treasurer. </div>
+                <div class="response">Really like helping SIAM.  </div>
             </li>
             <li>
                 <div class="question">What things are you involved with at Clemson (or were involved in during undergrad)?</div>
-                <div class="response">Since I am new to Clemson, I am not involved in many things, yet. I am playing flag football on our department intramural team. 
-In undergrad, I was involved in symphony band, clarinet choir, math tutoring, and many community service projects. </div>
+                <div class="response">SIAM (2013-2014), GSG (2013-2014), Actuarial Club (2014-2015), AWM (2013-2015)</div>
             </li>
             <li>
                 <div class="question">What do you plan to do after you get your degree?</div>
-                <div class="response">At this point, I am not sure whether I want to go into industry or academia after earning my degree.</div>
+                <div class="response">Research in industry (hopefully).</div>
+                </li>
+        </ul>
+    </div>
+ <div id="info_5" class="info" style="display: none;">
+        <div class="name">Ryan Grove</div>
+        <hr>
+        <ul class="questionnaire">
+            <li>
+                <div class="question">Where did you attend undergrad?</div>
+                <div class="response">Indiana University of Pennsylvania</div>
+            </li>
+            <li>
+                <div class="question">What is your concentration area at Clemson?</div>
+                <div class="response">Comp</div>
+            </li>
+            <li>
+                <div class="question">Who is your advisor(s)?</div>
+                <div class="response">Dr. Timo Heister</div>
+            </li>
+            <li>
+                <div class="question">Are you currently working on a MS or a PhD?</div>
+                <div class="response">I'm working towards a PhD.</div>
+            </li>
+            <li>
+                <div class="question">What area of the US/world do you consider to be home?</div>
+                <div class="response">Portage, PA</div>
+            </li>
+            <li>
+                <div class="question">Why you are running?</div>
+                <div class="response">I know HTML and like managing the website.</div>
+            </li>
+            <li>
+                <div class="question">What things are you involved with at Clemson (or were involved in during undergrad)?</div>
+                <div class="response">Create and captain intramural teams for our department and currently the webmaster for SIAM.</div>
+            </li>
+            <li>
+                <div class="question">What do you plan to do after you get your degree?</div>
+                <div class="response">Enjoy life, duh. Same thing I do now.</div>
                 </li>
         </ul>
     </div>

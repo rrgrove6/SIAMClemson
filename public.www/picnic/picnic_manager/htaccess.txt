@@ -3,7 +3,8 @@ AuthName "Novell Tree"
 AuthType login.clemson.edu
 
 <Files "*">
-	require user mdowlin
+	require user rgrove	
+        require user tto
 	require user adevrie
 	require user lwaddel
 	require user gdranic
