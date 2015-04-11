@@ -82,7 +82,7 @@ function confirm_vote()
     $("#vp_prefs").val(pack_up(vp_prefs));
     $("#treas_prefs").val(pack_up(treas_prefs));
     $("#sec_prefs").val(pack_up(sec_prefs));
-    $("#web_prefs").val(pack_up(sec_prefs));
+    $("#web_prefs").val(pack_up(web_prefs));
     
     var voting_summary = create_summary("President", pres_prefs);
     voting_summary += create_summary("\nVice President", vp_prefs);
@@ -193,8 +193,9 @@ if(is_voter_eligible($username))
         $vp_prefs = explode(",", get_str_value($_POST, "vp_prefs"));
         $treas_prefs = explode(",", get_str_value($_POST, "treas_prefs"));
         $sec_prefs = explode(",", get_str_value($_POST, "sec_prefs"));
+        $web_prefs = explode(",", get_str_value($_POST, "web_prefs"));
 
-        add_new_vote($username, $pres_prefs, $vp_prefs, $treas_prefs, $sec_prefs);
+        add_new_vote($username, $pres_prefs, $vp_prefs, $treas_prefs, $sec_prefs, $web_prefs);
 ?>
 <p>Thank you for voting in the SIAM officer election. The results will be announced at the Spring Picnic on Friday, April 17, 2015.</p>
 <?php
