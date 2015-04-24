@@ -46,8 +46,7 @@ function get_str_val($name)
 
 function get_signup_str()
 {
-    $output = get_int_val("num_attending") . ", " . get_int_val("pi_pep") . ", " . get_int_val("pi_saus") . ", " . get_int_val("pi_cheese") . ", " . get_int_val("pi_veg") . ", 
-" . get_int_val("pi_chicken") . ", " . get_int_val("pi_mushroom") . ", " . get_int_val("pi_green_pepper") . ", " . get_int_val("pi_bacon") . ", \"" . get_str_val("pi_other") . "\", " . get_int_val("ice_caramel") . ", " . get_int_val("ice_fudge") . ", " . get_int_val("ice_sprinkles") . ", " . get_int_val("ice_whip") . ", " . get_int_val("ice_cherries") . ", \"" . get_str_val("ice_other") . "\"";
+    $output = get_int_val("num_attending") . ", " . get_int_val("pi_pep") . ", " . get_int_val("pi_saus") . ", " . get_int_val("pi_cheese") . ", " . get_int_val("pi_veg") . ", \"" . get_str_val("pi_other") . "\", " . get_int_val("ice_caramel") . ", " . get_int_val("ice_fudge") . ", " . get_int_val("ice_sprinkles") . ", " . get_int_val("ice_whip") . ", " . get_int_val("ice_cherries") . ", \"" . get_str_val("ice_other") . "\"";
     
     return $output;
 }
@@ -67,7 +66,7 @@ if(get_int_val("submit_signup") == 1)
     {
         // insert into database
         $signup_str = get_signup_str();
-        $query = "Insert into christmas_party (cu_login, year, num_attending, pi_pep, pi_saus, pi_cheese, pi_veg, pi_chicken, pi_mushroom, pi_green_pepper, pi_bacon, pi_other, ice_caramel, ice_fudge, ice_sprinkles, ice_whip, ice_cherries, ice_other) Values (\"$username\", $year, $signup_str)";
+        $query = "Insert into christmas_party (cu_login, year, num_attending, pi_pep, pi_saus, pi_cheese, pi_veg, pi_other, ice_caramel, ice_fudge, ice_sprinkles, ice_whip, ice_cherries, ice_other) Values (\"$username\", $year, $signup_str)";
     
         $result = mysql_query($query, $link);
         print("<p>$signup_confirmation_message</p>");

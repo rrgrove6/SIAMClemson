@@ -8,10 +8,10 @@
 <?php
 include "common/database.php";
 
-$year = 2014;
+$year = 2015;
 $link = db_connect();
 
-$query = "SELECT SUM(pi_pep) AS pepperoni, SUM(pi_cheese) AS cheese, SUM(pi_saus) AS sausage, SUM(pi_veg) AS veggie, SUM(ice_caramel) AS caramel, SUM(ice_fudge) AS fudge, SUM(ice_sprinkles) AS sprinkles, SUM(ice_whip) AS whip_cream, SUM(ice_cherries) AS cherries FROM christmas_party WHERE year = $year";
+$query = "SELECT SUM(pi_pep) AS pepperoni, SUM(pi_cheese) AS cheese, SUM(pi_saus) AS sausage, SUM(pi_veg) AS veggie, SUM(pi_chicken) AS chicken, SUM(pi_mushroom) AS mushroom, SUM(pi_green_pepper) AS greenpepper, SUM(pi_bacon) AS bacon, SUM(ice_caramel) AS caramel, SUM(ice_fudge) AS fudge, SUM(ice_sprinkles) AS sprinkles, SUM(ice_whip) AS whip_cream, SUM(ice_cherries) AS cherries FROM christmas_party WHERE year = $year";
 
 $result = mysql_query($query, $link);
 
@@ -22,6 +22,10 @@ print("<tr><td style=\" border-right: solid black 1px;\">pepperoni</td><td style
 print("<tr><td style=\" border-right: solid black 1px;\">sausage</td><td style=\"text-align: center;\">$row[sausage]</td></tr>");
 print("<tr><td style=\" border-right: solid black 1px;\">cheese</td><td style=\"text-align: center;\">$row[cheese]</td></tr>");
 print("<tr><td style=\" border-right: solid black 1px;\">veggie</td><td style=\"text-align: center;\">$row[veggie]</td></tr>");
+print("<tr><td style=\" border-right: solid black 1px;\">chicken</td><td style=\"text-align: center;\">$row[chicken]</td></tr>");
+print("<tr><td style=\" border-right: solid black 1px;\">mushroom</td><td style=\"text-align: center;\">$row[mushroom]</td></tr>");
+print("<tr><td style=\" border-right: solid black 1px;\">greenpepper</td><td style=\"text-align: center;\">$row[greenpepper]</td></tr>");
+print("<tr><td style=\" border-right: solid black 1px;\">bacon</td><td style=\"text-align: center;\">$row[bacon]</td></tr>");
 print("<tr><td style=\" border-right: solid black 1px;\">caramel</td><td style=\"text-align: center;\">$row[caramel]</td></tr>");
 print("<tr><td style=\" border-right: solid black 1px;\">fudge</td><td style=\"text-align: center;\">$row[fudge]</td></tr>");
 print("<tr><td style=\" border-right: solid black 1px;\">sprinkles</td><td style=\"text-align: center;\">$row[sprinkles]</td></tr>");
